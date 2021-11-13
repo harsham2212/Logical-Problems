@@ -10,7 +10,7 @@ namespace Logical_problems
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter the program number which is to be executed \n 1. Fibonacci Series \n 2. Perfect Number \n 3. Prime Number \n 4. Exit");
+                Console.WriteLine("Enter the program number which is to be executed \n 1. Fibonacci Series \n 2. Perfect Number \n 3. Prime Number \n 4. Reverse Number \n 5. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -30,6 +30,11 @@ namespace Logical_problems
                         num.Prime();
                         break;
                     case 4:
+                        Console.Write("Enter the number :");
+                        ReverseNumber rev = new ReverseNumber();
+                        rev.Reverse();
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
