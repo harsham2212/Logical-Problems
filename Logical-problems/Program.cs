@@ -23,7 +23,7 @@ namespace Logical_problems
                         Console.Write("Enter the number :");
                         PerfectNumber number = new PerfectNumber();
                         number.Perfect();
-                        break; ;
+                        break;
                     case 3:
                         flag = false;
                         break;
