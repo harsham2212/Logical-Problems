@@ -15,17 +15,14 @@ namespace Logical_problems
                 switch (option)
                 {
                     case 1:
-                        Console.Write("Enter the number :");
                         Fibonacci series = new Fibonacci();
                         series.FibonacciS();
                         break;
                     case 2:
-                        Console.Write("Enter the number :");
                         PerfectNumber number = new PerfectNumber();
                         number.Perfect();
                         break;
                     case 3:
-                        Console.Write("Enter the number :");
                         PrimeNumber num = new PrimeNumber();
                         num.Prime();
                         break;
