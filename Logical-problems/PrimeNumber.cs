@@ -15,7 +15,7 @@ namespace Logical_problems
             {
                 if (num % i == 0)
                 {
-                    count++;
+                     count++;
                 }
             }
             if (count == 2)
