@@ -10,7 +10,7 @@ namespace Logical_problems
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter the program number which is to be executed \n 1. Fibonacci Series \n 2. Perfect Number \n 3. Prime Number \n 4. Reverse Number \n 5. Coupon Number \n 6. Stop Watch \n 7. Exit");
+                Console.WriteLine("Enter the program number which is to be executed \n 1. Fibonacci Series \n 2. Perfect Number \n 3. Prime Number \n 4. Reverse Number \n 5. Coupon Number \n 6. Stop Watch \n 7. Vending Machine\n 8. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -41,6 +41,12 @@ namespace Logical_problems
                         sl.Calculate();
                         break;
                     case 7:
+                        Console.WriteLine("Enter the amount : ");
+                        int money = Convert.ToInt32(Console.ReadLine());
+                        VendingMachine change = new VendingMachine();
+                        change.Machine(money);
+                        break;
+                    case 8:
                         flag = false;
                         break;
                 }

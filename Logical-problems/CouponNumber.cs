@@ -8,11 +8,14 @@ namespace Logical_problems
     {
         public void Calculation(int N)
         {
+            int count = 0;
             int[] array = new int[N];
             for (int i = 0; i < N; i++)
+
             {
                 Random random = new Random();
-                int Random_generate = random.Next(999, 10000);
+                int Random_generate = random.Next(10, 100);
+                count++;
                 if (i == 0)
                 {
                     array[i] = Random_generate;
@@ -33,6 +36,7 @@ namespace Logical_problems
                         i--;
                 }
             }
+            Console.WriteLine("Count value:"+count);
             Console.Write("Distinct Coupons Are:");
             for (int i = 0; i < N; i++)
             {
